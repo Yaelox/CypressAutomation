@@ -1,13 +1,11 @@
-<reference types="cypress" />
+/// <reference types="cypress" />
 
 describe('My First Test', () => {
 
-  it('verify title-positive', () => {
+  it('verify title-positive', function () {
 
     //steps
-
     cy.visit("https://opensource-demo.orangehrmlive.com/")
-
     cy.title().should('eq', 'OrangeHRM') 
   })
   
@@ -16,9 +14,6 @@ describe('My First Test', () => {
     //steps
 
     cy.visit("https://opensource-demo.orangehrmlive.com/")
-    cy.title().should('eq', 'OrangeHRM1') 
-
-
-
+    cy.title().should('eq', 'OrangeHRM123') 
   })
 })
